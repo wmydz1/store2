@@ -1,0 +1,12 @@
+<empty name="messages">
+    <p class="norecode" style="font-size: 16px;color: #999999;padding:100px;text-align: center;">抱歉，您暂时没有要处理的消息！</p>
+    <else/>
+    <volist name="messages" id="message">
+        <div class="tp_message p">
+            <h3>系统通知</h3>
+            <p class="tpcontent">{$message['message']}</p>
+            <p class="checknoti"><em>{$message['send_time']|date='Y-m-d H:i:s',###}</em></p>
+            <!--<p class="checknoti"><a href="">查看详情></a></p>-->
+        </div>
+    </volist>
+</empty>
